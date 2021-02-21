@@ -1,0 +1,178 @@
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-flluid {
+    width: 100%;
+    height: 15%;
+}
+
+.top-right {
+    position: absolute;
+    top:100px;
+    right: 200px;
+    font-family: comic sans ms;
+    font-style: oblique;
+    color: bisque;
+    font-size: 50px;
+    
+}
+.dropdown-item:hove {
+    background-color: beige;
+}
+.banner {
+    width: 100%;
+    height: 500px;
+}
+.intro{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }
+
+.bottom {
+    bottom: -100px;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    
+}
+.nav-item:hover {
+font-size: 20px;
+
+
+}
+.dimensions-about {
+    width: 600px;
+    height: 500px;
+    margin-bottom: 10px;
+}
+.top{
+    background-color: darkcyan;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.dimensions {
+    height: 500px;
+}
+.carousel-content {
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    z-index: 20;
+    text-decoration-style: wavy;
+    font-size: 30px;  
+
+    color:white;
+    text-shadow: 0 5px 5px rgba(0,0,0,.6);
+  }
+  
+.bhov:hover {
+    color: black;
+}
+
+.nav-col {
+    background-color: lavender;
+}
+.yellow {
+    color:orange;
+}
+.red {
+    color: red;
+}
+.photo-dim {
+    width: 650px;
+    height: 450px;
+    
+}
+#bg-box{
+    background-color:azure;
+    animation-name: change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes change{
+    from {
+        background-color: azure;
+    }
+   to{
+       background-color:#F4ECF7;
+   }
+}
+
+
+
+#text-size {
+    font-size: 20px;
+}
+#bg-bottom{
+    background-color:azure;
+    animation-name: change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+.card{
+    margin-bottom: 5px;
+}
+ .reviews-slider  {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.reviews-slider{
+    background-color: #ececec;
+}
+.center {
+    align-self:center ;
+}
+
+
+.card:hover{
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+}
+.tour-item{
+    font-size: small;
+    padding-top: 20px;
+    color: black;
+}
+.tour-item h5{
+    font-size: 1.2em;
+}
+.tours, .page-content{
+    background-color: whitesmoke;
+}
+.learn-more-photo {
+    width: 650px;
+    height: 450px;
+}
+.rev {
+    width: 400px;
+}
+#review_slider_content li .card{
+    text-align: center;
+}
+#review_slider_content li .card img{
+    width: 50px;
+    margin-bottom: 15px;
+}
+#review_slider_content li .card .card-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+#review_slider_content li .card .star{
+    color: orange;
+    font-size: 14px;
+}
+#review_slider_content li .card .card-text{
+    font-size: 14px;
+}
+

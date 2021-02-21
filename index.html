@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - JavaScript</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font/Rimouski.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weather App - JavaScript</h1>
+    <div id="mainContainer">
+        <div class="row">
+    <div class="container1 transparent col-lg-4 ">
+        <div class="app-title">
+            <p id = "weather">Current weather</p>
+        </div>
+        <div class="notification"> </div>
+        <div class="weather-container1 ">
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value ">
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container2 col-lg-6 col-sm-6 col-xs-1  bg-transparent">
+        <div class="row container-title" style="padding-bottom: 20px;">
+            <!-- <p > Additional information
+                </p> -->
+            </div>
+            <div class="row" style="height: 90px;">
+                <div class="col-6">
+                    <!-- <p class="currDescription text-dec ">-</p> -->
+
+                </div>
+                <div class="col-6">
+                    <div class="realFeal text-dec">- <br>
+                    <i class="text-dec" ></i></div>
+
+                </div>
+            </div>
+            <div class="row" style="height: 90px;">
+                <div class="col-6 " >
+                    <span class="min value-dec"> -</span> <br>
+                    <i class='fas fa-temperature-low text-dec'> Min Temp  </i>
+                    
+                </div>
+                <div class="col-6">
+                    <span class="max value-dec"> -</span> <br>
+                    <i class='fas fa-temperature-high text-dec'> Max Temp</i>
+                   
+                </div>
+            </div>
+            <br>
+
+            <div class="row" style="height: 90px;">
+                <div class="col-6">
+                    <span class="humidity  value-dec"> -</span> <br>
+                    <i class='fas fa-water text-dec' > Humidity</i>
+
+                </div>
+                <div class="col-6">
+                    <span class="visibility value-dec"> -</span> <br>
+                    <i class="fas fa-eye text-dec" > Visibility </i>
+
+
+                </div>
+            </div>
+
+    </div>
+
+    </div>
+   
+    </div>
+
+    <h3> Daily Forecast for <span class="place" ></span></h3>
+
+    <div class="container-forecast"  style=" width: 100vw;" ;>
+       <div class="row">
+        
+           <div class=" col-sm-6 col-lg-2 col-md-4  col-xs-12  ">
+            <div class="card transparent" >
+                <div class="card-body ">
+                  <h5 class="day1">-</h5>
+                  <div class="weather-icon1">
+
+                  <img src="icons/unknown.png" alt="">
+                  </div>
+                  <div class="temperature-value1 ">
+                    <p>- °<span>C</span></p>
+                </div>
+                <div class="temperature-description1">
+                    <p> - </p>
+                </div>
+                
+                <div class="min-max1">
+                    <p></p>
+                    
+                </div>
+                  
+                </div>
+              </div>
+           </div>
+           <div class=" col-sm-6 col-lg-2 col-md-4  col-xs-12  ">
+            <div class="card transparent" >
+                <div class="card-body">
+                  <h5 class="day2">-</h5>
+                  <div class="weather-icon2">
+
+                    <img src="icons/unknown.png" alt="">
+                    </div>
+                    <div class="temperature-value2 ">
+                        <p>- °<span>C</span></p>
+                    </div>
+                    <div class="temperature-description2">
+                        <p> - </p>
+                    </div>
+                    <div class="min-max2">
+                        <p></p>
+                        
+                    </div>
+                 
+                  
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-6 col-lg-2 col-md-4  col-xs-1 ">
+            <div class="card transparent" >
+                <div class="card-body ">
+                  <h5 class="day3">-</h5>
+                  <div class="weather-icon3">
+
+                    <img src="icons/unknown.png" alt="">
+                    </div>
+                    <div class="temperature-value3 ">
+                        <p>- °<span>C</span></p>
+                    </div>
+                    <div class="temperature-description3">
+                        <p> - </p>
+                    </div>
+                    <div class="min-max3">
+                        <p></p>
+                        
+                    </div>
+                  
+                </div>
+              </div>
+           </div>
+           <div class=" col-sm-6 col-lg-2 col-md-4  col-xs-12 ">
+            <div class="card transparent" >
+                <div class="card-body">
+                  <h5 class="day4">-</h5>
+                  <div class="weather-icon4">
+
+                    <img src="icons/unknown.png" alt="">
+                    </div>
+                  
+                    <div class="temperature-value4 ">
+                        <p>- °<span>C</span></p>
+                    </div>
+                    <div class="temperature-description4">
+                        <p> - </p>
+                    </div>
+                    <div class="min-max4">
+                        <p></p>
+                        
+                    </div>
+                  
+                </div>
+              </div>
+           </div>
+
+           <div class=" col-sm-6 col-lg-2 col-md-4  col-xs-12 ">
+            <div class="card transparent" >
+                <div class="card-body">
+                  <h5 class="day5">-</h5>
+                  <div class="weather-icon5">
+
+                    <img src="icons/unknown.png" alt="">
+                    </div>
+                  
+                    <div class="temperature-value5 ">
+                        <p>- °<span>C</span></p>
+                    </div>
+                    <div class="temperature-description5">
+                        <p> - </p>
+                    </div>
+                    <div class="min-max5">
+                        <p></p>
+                        
+                    </div>
+                  
+                </div>
+              </div>
+           </div>
+
+          
+       </div>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+
